@@ -35,7 +35,7 @@ A transform :math:`T(x)` represents the spatial mapping of points from the fixed
     :figwidth: 50%
     :width: 90% 
 
-    Figure 2: Image registration is the act of deforming moving image points :math:`p` to biologically corresponding points :math:`q` in the fixed image domain.
+    Figure 2: Image registration is the act of deforming fixed image points :math:`p` to biologically corresponding points :math:`q` in the moving image domain.
 
 A similarity metric provides a measure of how well the fixed image matches the moving image. This measure forms a quantitative criterion to be optimized by an optimizer over the search space defined by the parameters of the transform. In general, the registration procedure is formulated as an optimization problem in which a cost function :math:`C` is minimized with respect to :math:`T`. Mathematically, :math:`I_M(x)` is deformed to match :math:`I_F(x)` by finding a coordinate transformation :math:`T(x)` that makes :math:`I_M(T(x))` spatially aligned with :math:`I_F(x)`. This simply means that the optimizer adjusts the parameters of the transform in a way that minimizes the difference between the two images.
 
